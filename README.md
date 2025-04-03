@@ -10,8 +10,3 @@
 - 개발 환경 : Google Colab , Python 
   
 
-##  설치 방법  
-```bash
-git clone https://github.com/Leejugyeong/wildlife_detection.git
-cd My_YOLO_Project
-pip install -r requirements.txt
