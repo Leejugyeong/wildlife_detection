@@ -1,12 +1,20 @@
-# wildlife_detection  
+#  Wild Boar Detection with YOLOv5
+## 1. 프로젝트 개요
+- 야생 멧돼지 탐지를 위한 YOLOv5 기반 객체 탐지 프로젝트
+- Roboflow에서 데이터셋을 수집하고, 모델을 학습하여 실제 영상에서 탐지 가능하게 구현
 
-##  프로젝트 소개  
-이 프로젝트는 YOLOv5 모델을 사용하여 야생동물을 탐지하는 딥러닝 기반 객체 탐지 프로젝트입니다.  
+## 2. 데이터셋 및 전처리
+- Roboflow Universe에서 공개된 멧돼지 탐지 데이터셋 사용
+- OpenCV를 활용한 데이터 증강 진행
 
-##  프로젝트 개요
-- 프로젝트 목표 : 야생 멧돼지를 탐지하여 농작물 피해를 방지하는 시스템 구축
-- 사용 모델 : YOLOv5
-- 프레임워크 : PyTorch, OpenCV
-- 개발 환경 : Google Colab , Python 
-  
+## 3. 모델 학습 및 분석
+- YOLOv5s 모델 사용, 하이퍼파라미터 튜닝 진행
+- Precision, Recall, mAP 분석 및 성능 개선 방안 도출
 
+## 4. 성능 평가 및 결과
+- 최종 mAP 0.85 달성 (YOLOv5s 기준)
+- 일부 오탐지 발생 → 데이터셋 보강 필요
+
+## 5. 향후 발전 방향
+- YOLOv7로 업그레이드 실험
+- TensorRT 변환 및 실시간 속도 개선
